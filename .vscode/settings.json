@@ -1,0 +1,8 @@
+{
+    "conventionalCommits.scopes": [
+        "general",
+        "src",
+        "notebooks",
+        "data"
+    ]
+}
