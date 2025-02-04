@@ -7,7 +7,7 @@ lint.extend-select = [
   "B", # flake8-bugbear
   "ISC", # isort checks
 ]
-lint.ignore = ["D100", "D104", "D203", "E225", "E226"]
+lint.ignore = ["D100", "D104", "D203", "E225", "E226", "F401"]
 lint.select = ["Q", "N", "UP", "B", "ISC", "F", "E", "W"]
 
 [lint.flake8-quotes]
