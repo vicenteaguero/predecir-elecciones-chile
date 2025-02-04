@@ -1,0 +1,108 @@
+/* assets/css/graficos.css */
+
+/* Winners Electoral */
+
+table.winners-electoral {
+
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    cursor: pointer;
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: var(--color-ecru);
+        color: var(--color-black);
+        z-index: 100;
+    }
+
+    th,
+    td {
+        padding: var(--padding-tiny) var(--padding-normal);
+        margin: 0;
+        border: 0;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: color-mix(in srgb, var(--color-ecru) 20%, transparent);
+    }
+
+    td.winner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    span.winner {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        font-size: var(--fontsize-small);
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    span.winner.left {
+        background-color: var(--color-left);
+    }
+
+    span.winner.right {
+        background-color: var(--color-right);
+    }
+
+    ul.votes {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: max-content;
+        padding: var(--fontsize-small);
+        margin: 0;
+        background-color: color-mix(in srgb, var(--color-ecru) 80%, transparent);
+        color: var(--color-black);
+        font-family: var(--secondary-font-family);
+        font-weight: normal;
+        text-align: left;
+        z-index: 10;
+        list-style: none;
+    }
+
+    ul.votes li {
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+        text-wrap: none;
+    }
+
+    span.winner:hover ul.votes {
+        display: block;
+    }
+    
+
+}
+
+
+/* td.winner {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: white;
+} */
